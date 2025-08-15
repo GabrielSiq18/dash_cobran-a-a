@@ -17,7 +17,7 @@ st.set_page_config(
 # LOGIN SIMPLES
 # -----------------------------
 usuarios = {
-    "gabriel": "1234",
+    "Disk": "Disk321",
     "admin": "senhaadmin"
 }
 
@@ -224,3 +224,4 @@ if not df_filtrado.empty:
 
 st.subheader("📊 Relação dos Clientes")
 st.dataframe(df_filtrado, use_container_width=True)
+
