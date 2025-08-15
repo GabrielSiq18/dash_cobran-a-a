@@ -44,7 +44,7 @@ if "logado" not in st.session_state or not st.session_state["logado"]:
 # -----------------------------
 # CARREGA DADOS
 # -----------------------------
-caminho_planilha = r'C:\Users\gabriel.silva\Documents\COBRANÇA DISK.xlsx'
+caminho_planilha = r'C:\Users\gabriel.silva\Documents\dados\COBRANÇA DISK.xlsx'
 df_atualizado = pd.read_excel(caminho_planilha)
 
 df_atualizado.columns = df_atualizado.columns.str.strip()  # Remove espaços extras
@@ -224,4 +224,5 @@ if not df_filtrado.empty:
 
 st.subheader("📊 Relação dos Clientes")
 st.dataframe(df_filtrado, use_container_width=True)
+
 
